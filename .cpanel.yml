@@ -1,6 +1,6 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/user/public_html/
+ - export DEPLOYPATH=/home/eiviwbcz/arnekvaleberg.com/
  - /bin/cp index.html /home/eiviwbcz/arnekvaleberg.com
  - /bin/cp style.css /home/eiviwbcz/arnekvaleberg.com
