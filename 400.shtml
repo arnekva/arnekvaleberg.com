@@ -1,0 +1,124 @@
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+.error-text{
+    color:#afafaf;
+    
+}
+.feilkoder{
+    text-align:left;
+    width:30%;
+    margin-left:90px;
+    margin-right:-130px;
+    margin-top:200px;
+}
+    </style>
+
+    <link rel="icon" href="/images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/404.css">
+  <meta charset="UTF-8">
+  </head>
+  
+<body>
+
+<div class="error-page">
+  <div>
+
+    <h1 data-h1="400">400</h1>
+    <p data-p="Bad Request">Bad Request</p>
+    <p style="color:#afafaf;">Nettleseren din har sendt en forespørselen serveren</p>
+    <p style="color:#afafaf;">ikke kan behandle. Prøv å last inn på ny, eller kontroller at linken er korrekt</p>
+    <p><a style="color:#aeccfc;text-decoration:none;font-size:25px;" href="/">Ta meg tilbake</a></p>
+    
+    <br/><br/>
+    
+</div>
+<div class="feilkoder">
+        <h3 style="color:#afafaf;">Feilkoder</h3>
+        <h4 style="color:#afafaf;">Vennligst ta vare på og oppgi følgende informasjon ved kontakt angående problem: </h4>
+        <p class="error-text">Error Code: <!--#echo var="REDIRECT_STATUS" --></p>
+         <p class="error-text">Remote Address: <!--#echo var="REMOTE_ADDR" --></p>
+         <p class="error-text">Requested URI: <!--#echo var="REQUEST_URI" --></p>
+          <p class="error-text">Server Name: <!--#echo var="HTTP_HOST" --></p>
+         <p class="error-text">User Agent: <!--#echo var="HTTP_USER_AGENT" --></p>
+         <p class="error-text">Http_Referer: <!--#echo var="HTTP_REFERER" --></p>
+
+    </div>
+ </div>
+
+ 
+
+<div id="particles-js" style="pointer-events:none;"><script src="/particles.js"></script></div>
+<script>particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 5,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#fcfcfc"
+    },
+    "shape": {
+      "type": "circle",
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.2,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 140,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 10,
+        "size_min": 40,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+    },
+    "move": {
+      "enable": true,
+      "speed": 8,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+    "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    }
+  },
+  "retina_detect": true
+});
+</script>
+
+
+
+</body>
+</div>
