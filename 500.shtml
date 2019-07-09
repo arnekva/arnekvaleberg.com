@@ -3,7 +3,7 @@
   <style>
 .error-text{
     color:#afafaf;
-    
+
 }
 .feilkoder{
     text-align:left;
@@ -18,7 +18,7 @@
   <link rel="stylesheet" type="text/css" href="/404.css">
   <meta charset="UTF-8">
   </head>
-  
+
 <body>
 
 <div class="error-page">
@@ -29,9 +29,9 @@
     <p style="color:#afafaf;"> Serveren har støtt på et internt problem under behandling av forespørselen din og den ble  </p>
     <p style="color:#afafaf;">derfor ikke fullført. Vennligst prøv på nytt. Dersom problemet vedvarer, <a style="color:#aeccfc;text-decoration:none;" href="mailto:arnekva@gmail.com"> ta kontakt på mail</a>. </p>
     <p><a style="color:#aeccfc;text-decoration:none;font-size:25px;" href="/">Ta meg tilbake</a></p>
-    
+    <p>Ta gjerne kontakt på <a href="mailto:webmaster@arnekvaleberg.com">webmaster@arnekvaleberg.com</a>.</p>
     <br/><br/>
-    
+
 </div>
 <div class="feilkoder">
         <h3 style="color:#afafaf;">Feilkoder</h3>
@@ -46,9 +46,9 @@
     </div>
  </div>
 
- 
 
-<div id="particles-js" style="pointer-events:none;"><script src="/particles.js"></script></div>
+
+<div id="particles-js" style="pointer-events:none;"></div>
 <script>particlesJS("particles-js", {
   "particles": {
     "number": {
@@ -118,7 +118,7 @@
 });
 </script>
 
-
+<script src="js/particles.js"></script>
 
 </body>
 </div>
