@@ -18,7 +18,9 @@
 <link rel="icon" href="images/favicon.png">
  <meta charset="UTF-8">
 <meta name="robots" content="index">
-
+<style>
+    .galleria{ max-width: 800px; height: 600px; background: #000 }
+</style>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +32,7 @@
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
   <link href="css/annet.css" rel="stylesheet">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 </head>
 
 <body id="page-top" >
@@ -334,6 +336,13 @@
       <div class="w-100">
         <h2 class="mb-5">Interesser</h2>
         <p>Kommer snart!</p>
+        <div class="galleria">
+    <img src="img/gallery/img1.JPG" data-title="Glittertind" data-description="Tur opp i 2016">
+    <img src="img/gallery/img2.JPG" data-title="Glittertind" data-description="Tur opp i 2016">
+    <img src="img/gallery/img3.JPG" data-title="Glittertind" data-description="Tur opp i 2016">
+    <img src="img/gallery/img4.JPG" data-title="Glittertind" data-description="Tur opp i 2016">
+    <img src="img/gallery/img5.JPG" data-title="Glittertind" data-description="Tur opp i 2016">
+</div>
         <p class="mb-0"></p>
       </div>
     </section>
@@ -372,6 +381,14 @@
 
   <script src="js/resume.min.js"></script>
 <script src="js/titleupdate.js"></script>
+<script src="galleria/galleria-1.5.7.js"></script>
+<script src="galleria/galleria-1.5.7.min.js"></script>
+<script>
+  (function() {
+    Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+    Galleria.run('.galleria');
+  }());
+</script>
 
 </body>
 
