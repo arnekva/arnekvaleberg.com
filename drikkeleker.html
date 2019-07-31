@@ -10,24 +10,39 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <style>
-  h3{
-    font-size:150px;
-    background: -webkit-linear-gradient(81deg, rgba(255,87,0,1) 0%, rgba(216,0,255,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  }
-  .container{
+  .container ul{
     list-style-type: none;
     text-align:center;
+    margin-left:-30px;
+  }
+  .container{
+    text-align:center;
+
   }
   a {
     font-size:50px;
     margin-top:30px;
     color:#0007ff;
 
-  }
 
+  }
+  @media only screen and (max-width:800px){
+    h3{
+      font-size:50px;
+      background: -webkit-linear-gradient(81deg, rgba(255,87,0,1) 0%, rgba(216,0,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom:40px;
+
+  }
+  body{
+    background-color:blue;
+    width:100%;
+    background: rgb(111,251,255);
+    background: linear-gradient(90deg, rgba(111,251,255,1) 0%, rgba(255,171,249,1) 48%, rgba(255,197,124,1) 100%);
+  }
+}
+@media only screen and (min-width:900px){
 .container ul{
   list-style-type: none;
   margin-left:-20px;
@@ -36,17 +51,58 @@ body{
   background: rgb(111,251,255);
   background: linear-gradient(90deg, rgba(111,251,255,1) 0%, rgba(255,171,249,1) 48%, rgba(255,197,124,1) 100%);
 }
+h3{
+  font-size:150px;
+  background: -webkit-linear-gradient(81deg, rgba(255,87,0,1) 0%, rgba(216,0,255,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.collapse{
+  font-size:2.5rem !important;
+}
+}
   </style>
 <body>
 
 <div class="container">
   <h3>Drikkeleker</h3>
   <ul>
-  <li><a href="#" data-toggle="popover" title="Regler" data-content="Sett essene i en rekke nederst, og plasser en rad med kort opp-ned i en rad oppover (5-7 kort) ved siden. Snu et kort fra bunken, og flytt tilsvarende ess ett hakk opp. Når alle fire esser har krysset en rad, snu kortet. Sorten som snus skal sende tilsvarende ess ett hakk tilbake.">Veddeløp</a>
-  </li><li><a href="#" data-toggle="popover" title="Regler" data-content="Gå i runde. Dealer spør først om rød eller svart, så opp eller ned, så innenfor eller utfor verdiområde av de 2 forrige kortene, deretter om du har eller ikke har sorten som kommer på neste kort. Feil svar gir slurker tilsvarende mengden kort spilleren har.">Opp eller ned</a>
-  </li><li><a href="#" data-toggle="popover" title="Regler" data-content="Dealer en og en person: Si en verdi mellom 2 og 14. Dealeren sjekker om det er rett. Hvis det er rett drikker dealer. Hvis ikke sier han opp eller ned. Spilleren får da gjette ny verdi, og dealeren legger deretter kortet på bordet. Dersom spilleren gjettet riktig, drikker dealer. Gjettet han feil drikker spiller, og turen går videre. Dersom 3 spillere feiler på rad, blir spilleren til venstre for dealer nye dealeren.">Fuck the dealer</a>
-  </li><li>  <a href="#" data-toggle="popover" title="Regler" data-content="Alle spillere får 3 kort hver. Ett kort legges i midten. Spillere som har et kort som matcher enten tallet eller sorten i midten kan legge på kortet og si 'fuck *person*'. Neste person som vil legge på må da matche det nye øverste kortet. Siste person som blir fucket må drikke slurker tilsvarende antall kort som ligger i midten. Alle går samtidig, og man kan fucke samme person så mange ganger man vil. Ingen utenom siste mann som blir fucket må drikke.">Fuck You</a></li>
-  <li>  <a href="#" data-html="true" data-toggle="popover" title="Regler" data-content="<b>A</b> - Waterfall. <br /> <b>2</b> - 2 is you. Velg en person som må drikke. <br /> <b>3</b> - 3 is me. Drikk selv. <br /> <b>4</b> - 4 is whores. Alle jenter må drikke. <br /> <b>5</b> - Tommel. Innehaver av kortet kan når som helst bruke det ved å legge tommelen på bordet. Sistemann til å gjøre det må drikke. <br /> <b>6</b> - 6 is dicks. Alle gutter må drikke. <br /> <b>7</b> - 7 Heaven. Innehaver kan når som helst peke hånden i sky. Sistemann må drikke. <br /> <b>8</b> - 8 is mate. Velg en drikkemakker. Makker må alltid drikke når du må drikke. <br /> <b>9</b> - 9 is rhyme. Si et ord, og nestemann må rime ordet. Den som ikke klarer det må drikke. <br /> <b>10</b> - Kategori. Velg en kategori og si en ting. Etter tur, den første som ikke kommer på noe må drikke. <br /> <b>Knekt</b> - Regel. Lag en regel. Den som bryter regel må drikke. Varer helt til neste knekt. <br /> <b>Dronning</b> - Spørsmål. Spilleren stiller et spørsmål til en person. Personen kan ikke svare på spørsmålet, og må stille et spørsmål videre før han kan snakke igjen. Første mann som feiler må drikke. <br /> <b>Konge</b> - Kongen befaler. Prøv å fest kortet i panna. Så lenge kortet sitter, kan spilleren befale hva andre spillere skal gjøre. Varer helt til kortet faller av.">Ring Of Fire</a></li>
+    <li>
+      <a href="#" data-toggle="collapse" data-target="#veddelop" >Veddeløp</a>
+    <div id="veddelop" class="collapse">
+      Sett essene i en rekke nederst, og plasser en rad med kort opp-ned i en rad oppover (5-7 kort) ved siden. Snu et kort fra bunken, og flytt tilsvarende ess ett hakk opp. Når alle fire esser har krysset en rad, snu kortet. Sorten som snus skal sende tilsvarende ess ett hakk tilbake.
+    </div>
+    </li>
+
+    <li>
+      <a href="#" data-toggle="collapse" data-target="#oppned" >Opp Eller Ned</a>
+    <div id="oppned" class="collapse">
+      Gå i runde. Dealer spør først om rød eller svart, så opp eller ned, så innenfor eller utfor verdiområde av de 2 forrige kortene, deretter om du har eller ikke har sorten som kommer på neste kort. Feil svar gir slurker tilsvarende mengden kort spilleren har.
+      </div>
+    </li>
+
+    <li>
+      <a href="#" data-toggle="collapse" data-target="#dealer" >Fuck the dealer</a>
+    <div id="dealer" class="collapse">
+      Dealer en og en person: Si en verdi mellom 2 og 14. Dealeren sjekker om det er rett. Hvis det er rett drikker dealer. Hvis ikke sier han opp eller ned. Spilleren får da gjette ny verdi, og dealeren legger deretter kortet på bordet. Dersom spilleren gjettet riktig, drikker dealer. Gjettet han feil drikker spiller, og turen går videre. Dersom 3 spillere feiler på rad, blir spilleren til venstre for dealer nye dealeren.
+      </div>
+    </li>
+
+    <li>
+      <a href="#" data-toggle="collapse" data-target="#you" >Fuck You</a>
+    <div id="you" class="collapse">
+      Alle spillere får 3 kort hver. Ett kort legges i midten. Spillere som har et kort som matcher enten tallet eller sorten i midten kan legge på kortet og si 'fuck *person*'. Neste person som vil legge på må da matche det nye øverste kortet. Siste person som blir fucket må drikke slurker tilsvarende antall kort som ligger i midten. Alle går samtidig, og man kan fucke samme person så mange ganger man vil. Ingen utenom siste mann som blir fucket må drikke.
+        </div>
+    </li>
+
+    <li>
+      <a href="#" data-toggle="collapse" data-target="#ring" >Ring of Fire</a>
+    <div id="ring" class="collapse">
+      <b>A</b> - Waterfall. <br /> <b>2</b> - 2 is you. Velg en person som må drikke. <br /> <b>3</b> - 3 is me. Drikk selv. <br /> <b>4</b> - 4 is whores. Alle jenter må drikke. <br /> <b>5</b> - Tommel. Innehaver av kortet kan når som helst bruke det ved å legge tommelen på bordet. Sistemann til å gjøre det må drikke. <br /> <b>6</b> - 6 is dicks. Alle gutter må drikke. <br /> <b>7</b> - 7 Heaven. Innehaver kan når som helst peke hånden i sky. Sistemann må drikke. <br /> <b>8</b> - 8 is mate. Velg en drikkemakker. Makker må alltid drikke når du må drikke. <br /> <b>9</b> - 9 is rhyme. Si et ord, og nestemann må rime ordet. Den som ikke klarer det må drikke. <br /> <b>10</b> - Kategori. Velg en kategori og si en ting. Etter tur, den første som ikke kommer på noe må drikke. <br /> <b>Knekt</b> - Regel. Lag en regel. Den som bryter regel må drikke. Varer helt til neste knekt. <br /> <b>Dronning</b> - Spørsmål. Spilleren stiller et spørsmål til en person. Personen kan ikke svare på spørsmålet, og må stille et spørsmål videre før han kan snakke igjen. Første mann som feiler må drikke. <br /> <b>Konge</b> - Kongen befaler. Prøv å fest kortet i panna. Så lenge kortet sitter, kan spilleren befale hva andre spillere skal gjøre. Varer helt til kortet faller av.
+      </div>
+    </li>
+
 </ul>
 </div>
 
