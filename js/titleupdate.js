@@ -1,5 +1,5 @@
 var scrolling = false;
-console.log("Onscroll limited to 500ms");
+console.log("Onscroll limited to 800ms. Oppdateringsfrekvens senkes.");
 $( window ).scroll( function() {
   scrolling = true;
 });
