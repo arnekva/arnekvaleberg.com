@@ -17,10 +17,5 @@ setInterval( function() {
       document.title = 'Om | Arne Kvaleberg';
       console.log('Scrolled too far up, lost active class. Set to default.');
     }
-
-
-
-
-
   }
 }, 800 );
