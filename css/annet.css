@@ -30,7 +30,7 @@ margin-left:30px;
 }
 .column div span {
 	position: absolute;
-	bottom: -50px;
+	bottom: -40px;
 	left: 0;
 	z-index: 1;
 	display: block;
@@ -43,11 +43,12 @@ margin-left:30px;
 	text-align: center;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-}
-.column div span:hover {
-	bottom: 40px;
 	background-color:#f0f0f0;
 }
+.column div span:hover {
+	background-color:#f0f0f1;
+}
+
 figure {
 	width: 300px;
 	height: 200px;
@@ -58,7 +59,6 @@ figure {
   border: 6px solid #f0f0f0;
 }
 figure:hover+span {
-	bottom: 40px;
 		background-color:#f0f0f0;
 }
 .misc_list figure img {
@@ -73,4 +73,8 @@ figure:hover+span {
 .misc_list figure:hover img {
 	-webkit-filter: grayscale(100%) blur(3px);
 	filter: grayscale(100%) blur(3px);
+}
+.misc_list{
+
+	-webkit-transition: rotate(180deg);
 }
