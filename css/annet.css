@@ -78,3 +78,9 @@ figure:hover+span {
 
 	-webkit-transition: rotate(180deg);
 }
+.list-inline-item::after{
+	content:" · ";
+}
+.list-inline-item:last-child::after{
+	content:"";
+}
