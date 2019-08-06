@@ -27,7 +27,7 @@ th, td {
 .score{
   font-size:50px;
 }
-.txtbox, .navn{
+.txtbox,     input[type="text"]{
   height:30px;
   font-size:20px;
 }
@@ -93,6 +93,9 @@ a:active {
   text-align:center;
   font-size:40px;
   font-family: arial;
+}
+.knapp{
+  margin-left: 150px;
 }
 </style>
 
@@ -272,10 +275,8 @@ a:active {
 
   </table>
   <p id="winner" style="font-size:50px;color:red;"></p>
-  <input type="button" class="knapp" style="margin-left:2px;margin-right:50px;background:#a85959;"id="btn1" value="Nullstill" onclick="deleteAllCookies();" >
-
-  <input type="button" class="knapp" style="background:#6583b2;margin-right:5px;" id="btn1" value="Oppdater score" onclick="        ">
-  <input type="button" class="knapp" style="background:#6bb264;"id="btn1" value="Finn Vinner" onclick="findWinner();" >
+  <a href="#" class="knapp" style="margin-right:50px;background:#a85959;"id="btn1"  onclick="deleteAllCookies();" >Nullstill</a>
+  <a href="#" class="knapp" style="background:#6bb264;"id="btn1"  onclick="findWinner();" >Finn Vinner</a>
 
 
 <!--<p style="margin-top:60px;"><a style="font-size:40px;" href="kanastaregler">Regler for spillet</a></p> -->
@@ -370,12 +371,12 @@ $('input').focusout(function(event){
   }
   </script>
   <script type="text/javascript">
-  $('input').keyup(function(event){
+/*   $('input').keyup(function(event){
       let id = $(this).attr('class');
       let val = $(this).val();
       localStorage.setItem(id, val);
   });
-
+*/
   function saveValue(e){
 
       var id = e.id;  //saving id
