@@ -14,8 +14,10 @@
 
     <h1 data-h1="404">404</h1>
     <p data-p="Page not found">Page not found</p>
-    <p style="color:#afafaf;">Siden du leter etter finnes ikke. Den kan ha blitt flyttet eller eksisterer ikke lenger. <a style="color:#aeccfc;text-decoration:none;" href="/">Trykk her for å gå hjem.</a></p>
-    <p>Ta gjerne kontakt på <a href="mailto:webmaster@arnekvaleberg.com">webmaster@arnekvaleberg.com</a>.</p>
+    <p style="color:#afafaf;">Du prøvde å nå: <!--#echo var="REQUEST_URI" -->. Siden du leter etter finnes ikke. Den kan ha blitt flyttet eller eksisterer ikke lenger. <a style="color:#aeccfc;text-decoration:none;" href="/">Hjem.</a></p>
+    <p style="color:#afafaf;">Ta gjerne kontakt via <a href="mailto:webmaster@arnekvaleberg.com">webmaster@arnekvaleberg.com</a>.</p>
+
+
   </div>
 </div>
 <div id="particles-js" style="pointer-events:none;"><script src="/particles.js"></script></div>
