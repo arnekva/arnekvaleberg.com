@@ -1,0 +1,48 @@
+body{
+  background-color: #00043d;
+  color: #ff8400;
+  font-size:2.7rem;
+  font-family: sans-serif;
+}
+
+.container{
+  width:100%;
+  text-align: center;
+  vertical-align: center;
+  margin-top:150px;
+  height:100%;
+}
+.mylink{
+  margin-bottom:0px;
+  bottom:0;
+}
+
+.mainheader{
+  font-size:5rem;
+  font-weight:900;
+  margin-top:-100px !important;
+  color:#f5e000;
+  margin-bottom:10px;
+}
+#rom{
+  color: #ffc824;
+}
+#running{
+  margin-top:100px;
+  color: #f5e000;
+}
+h2{
+  font-size:3rem;
+}
+p{
+  font-size:2rem;
+  text-align:left;
+  margin-left:50px;
+  color:yellow;
+}
+.ingenting{
+  color:white;
+}
+.romkode{
+  font-size:3.5rem;
+}

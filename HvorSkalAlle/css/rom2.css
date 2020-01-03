@@ -1,0 +1,50 @@
+html{
+  height:100%;
+}
+body{
+  background-color:#1f1f1f;
+height:100%;
+  color: #8EE4AF;
+  font-size:2.7rem;
+  font-family: sans-serif;
+}
+
+.container{
+  width:100%;
+  text-align: center;
+  vertical-align: center;
+  margin-top:150px;
+  height:100%;
+}
+.mylink{
+  margin-bottom:0px;
+  bottom:0;
+}
+
+.mainheader{
+  font-size:5rem;
+  font-weight:900;
+  margin-top:-100px !important;
+  color:#ab0f0f;
+  margin-bottom:10px;
+}
+
+h2{
+  font-size:3rem;
+}
+p{
+  font-size:2rem;
+  text-align:left;
+  margin-left:50px;
+  color:#66d18f;
+}
+.ingenting{
+  color:#801616;
+}
+.romkode{
+  font-size:3.5rem;
+  color:#3de07b;
+}
+.smallhr{
+  width:50%;
+}
