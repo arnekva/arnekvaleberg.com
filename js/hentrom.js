@@ -40,8 +40,7 @@ function getTimeEdit(){
       t=8;
     }else{
       console.log("Adding one hour for " + i)
-    time = (date.getHours()-9+t) + ":" + "15"
-    //TODO: Fjern -9
+    time = (date.getHours()+t) + ":" + "15"
       }
     }
   }
