@@ -5,8 +5,8 @@ getTimeEdit()
 function getTimeEdit(){
   //link til åpen timeplan
   // TimeEdit -> Åpen timeplan HVL
-  let timeedit = "https://cloud.timeedit.net/hvl/web/pen/ri15X60Yg50601Q0g8QY5790Z866X678561Y540yZ08Q8186Y5X878d17W9p87Qc57Z81cQ7aX5nY7Y7SWm7j2lQ18l58qyZr7pxv7a597a1cp0ty6VXvwnjj7n8xv)XdWW)WmWS(armVW(wwxEnXV8e66Wnrp2n6FeX1aW9uWZZZX5nrajbæa.html#colorlinks"
-    let fagkoder = ["DAT151", "DAT153", "DAT154", "ING151"]
+  let timeedit = "https://cloud.timeedit.net/hvl/web/pen/ri15X60Yg50601Q0g7QY5660Z863X675561Y540yZ08Q8186Y7X87881725p88Q557899c717X7ZYQY.html#"
+  let fagkoder = ["DAT151", "DAT153", "DAT154", "DAT190"]
   //Starting get for timeedit
   $.get( timeedit, function(response){
   $('#testDiv').html(response);
