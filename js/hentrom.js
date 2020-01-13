@@ -26,13 +26,14 @@ function getTimeEdit(){
       for(let j = 0; j<fagkoder.length;j++){
         if(dagensNoder[i].title.includes(fagkoder[j])){
           let course = $('[data-fag="'+ fagkoder[j] +'"]')
+
             course.append("<p class='pclock'>Klokken: " + time + "</p>")
             if(dagensNoder[i].title.includes("Forelesning")){
-              course.append("<p class='romkode'>Rom: " + dagensNoder[i].innerHTML.substr(29,6).replace('(', '').replace(',', '') + "</p>")
-              course.append("<p>Type: " + dagensNoder[i].innerHTML.substr(16,11) + "</p>")
+              course.append("<p class='romkode'>Rom: " + dagensNoder[i].innerText.substr(17,6).replace('(', '').replace(',', '') + "</p>")
+              course.append("<p>Type: " + "Forelesning" + "</p>")
             }else if(dagensNoder[i].title.includes("Øving")){
-              course.append("<p class='romkode'>Rom: " + dagensNoder[i].innerHTML.substr(23,6).replace('(', '').replace(',', '') + "</p>")
-              course.append("<p>Type: " + dagensNoder[i].innerHTML.substr(16,5) + "</p>")
+              course.append("<p class='romkode'>Rom: " + dagensNoder[i].innerText.substr(12,6).replace('(', '').replace(',', '') + "</p>")
+              course.append("<p>Type: " + "Øvelse" + "</p>")
             }
             course.append("<hr class='largehr'/>")
             }
@@ -46,10 +47,19 @@ function getTimeEdit(){
   }
   for(k = 0;k<fagkoder.length;k++){
   if(!document.querySelector('[data-fag="'+ fagkoder[k] +'"]').hasChildNodes()){
-    $('[data-fag="'+ fagkoder[k] +'"]').append("<p class='ingenting'>Du har ingen timer i dag!</p><hr/>")
+    $('[data-fag="'+ fagkoder[k] +'"]').append("<p class='ingenting'>Du har ingen timer videre i dag!</p><hr/>")
   }
   }
   });
+}
+function checkType(type){
+  if(type.innerText.includes("fore")){
+    return "forelesning"
+  }else if(type.innerText.includes("velse")){
+    return "Øvelse"
+  }else{
+  return "Ikke spesifisert"
+  }
 }
 function checkTime(time){
   var date = new Date()
