@@ -7,7 +7,7 @@ let timeedit = gettimeedit()
 if(timeedit === null){
   $('#error').html("Du har ikke satt din egen timeedit ennå. Se <a href='hjelp.html'>her</a> for hjelp til oppsett. Du ser min som eksempel.");
   console.log("No timetable has been set in the localStorage")
-  timeedit = "https://cloud.timeedit.net/hvl/web/studbergen/ri10Yf506550Z9QY2XQ4757XZX076405702546Yy566Y5Q1g05Y10u5c47l5Q76X7Q70ZY7Y2ZQ0p9u0107xXZX4Q71l1502557Y651Qæl617W74WL3ZwX7ve87l5a5W78W6aX8WwE7Ynq5jX9n1W1Ww3p7wcxc6bmncUb9ceWjlXrn7rlrjQZ8e3tW6ra2wwK7XWc172aWWbn7rLW8vXpWmWet8nweXwcxbæ1wrjacWw3nnU6Emr1tacrXanjKw697WeWXW7vXXW55Won6cE65w26jWxX99196w1WX6a0W5v6KcXtnW7c)wv6v(V)aaw61xcXV5WX6X6KYoujxj(anj5w5v5Wop6b4a15p6w7175n9ZwWQQDeWQmdXr6tZ6Ewk00dZr0u1XtW43D06081E6C80F273E7912877DD9FE4.phtml"
+  timeedit = "https://cloud.timeedit.net/hvl/web/pen/ri15X60Yg50601Q0g8QY5790Z866X678561Y540yZ08Q8186Y5X878d17W9p87Qc57Z81cQ7aX5nY7Y7SWm7j2lQ18l58qyZr7pxv7a597a1cp0ty6VXvwnjj7n8xv)XdWW)WmWS(armVW(wwxEnXV8e66Wnrp2n6FeX1aW9uWZZZX5nrajbæa.html#colorlinks"
 }else{
   console.log("Successfully got timeedit from localStorage")
 }
