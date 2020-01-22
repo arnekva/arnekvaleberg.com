@@ -7,7 +7,7 @@ let timeedit = gettimeedit()
 if(timeedit === null){
   $('#error').html("Du har ikke satt din egen timeedit ennå. Se <a href='hjelp.html'>her</a> for hjelp til oppsett. Du ser min som eksempel.");
   console.log("No timetable has been set in the localStorage")
-  timeedit = "https://cloud.timeedit.net/hvl/web/pen/ri15X60Yg50601Q0g8QY5790Z866X678561Y540yZ08Q8186Y5X878d17W9p87Qc57Z81cQ7aX5nY7Y7SWm7j2lQ18l58qyZr7pxv7a597a1cp0ty6VXvwnjj7n8xv)XdWW)WmWS(armVW(wwxEnXV8e66Wnrp2n6FeX1aW9uWZZZX5nrajbæa.html#colorlinks"
+  timeedit = "https://cloud.timeedit.net/hvl/web/pen/ri10Yv551566Z6QY8XQ8777XZ708503574c078Yy668YQQ1gpZZ1QdZZZX77VdKtuqnul7n58m8KbWQjWWuuu0KjwZZZX7Xxb7)Kl7b(ubVnjW(vw9F7Xpw)WEe6aV1æW81WXjWu6nna.html#"
 }else{
   console.log("Successfully got timeedit from localStorage")
 }
@@ -31,7 +31,7 @@ for(let i = 1; i<12;i++){
     console.log("test" +  newtime)
     var newnode = document.querySelector('[title*=" ' + dato + ' '+ newtime + '"]')
     if(newnode !== null){
-      $('#running').html("Du har en pågående time: "+newnode.innerHTML.substr(8) + " (startet klokken " + newtime + ")")
+      $('#running').html("Du har en pågående time: "+newnode.innerText.substr(11,5) + " (startet klokken " + newtime + ")")
     } else{
       $('#running').html("")
     }
@@ -43,25 +43,23 @@ for(let i = 1; i<12;i++){
   console.log(timeint)
   var node = document.querySelector('[title*=" ' + dato + ' '+ time + '"]')
   if(node !== null){
-    if(node.innerHTML.substr(0,3) === "MAT"){
-      //gjør custom greier for matte
-      //no clue if this works
-      $('#rom').html(node.innerHTML.substr(74,10))
-      $('#fag').html(node.innerHTML.substr(0,6))
-      $('#type').html(node.innerHTML.substr(64,10))
-      $('#tid').html("Klokken " + time)
-      console.log("Matte?")
-      break
-    } else{
-    console.log(node.innerHTML) // .substr(7)
-    $('#rom').html(node.innerHTML.substr(29,6))
-    $('#fag').html(node.innerHTML.substr(0,6))
-    $('#type').html(node.innerHTML.substr(15,12))
+
+    console.log(node.innerText) // .substr(7)
+
+    if(node.title.includes("Forelesning")){
+      $('#rom').html(node.innerText.substr(17,6).replace('(', '').replace(',', ''))
+      $('#fag').html(node.innerText.substr(0,6))
+      $('#type').html(node.innerText.substr(6,11))
+    }else if(node.title.includes("Øving")){
+      $('#rom').html(node.innerText.substr(12,6).replace('(', '').replace(',', ''))
+      $('#fag').html(node.innerText.substr(0,6))
+      $('#type').html(node.innerText.substr(6,5))
+    }
+
 
     $('#tid').html("Klokken " + time)
 
     break
-    }
   } else{
     console.log("Adding one hour")
     time = (date.getHours()+i) + ":" + "15"
