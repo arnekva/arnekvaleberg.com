@@ -31,7 +31,7 @@ for(let i = 1; i<12;i++){
     console.log("test" +  newtime)
     var newnode = document.querySelector('[title*=" ' + dato + ' '+ newtime + '"]')
     if(newnode !== null){
-      $('#running').html("Du har en pågående time: "+newnode.innerText.substr(11,5) + " (startet klokken " + newtime + ")")
+      $('#running').html("Du har en pågående time: "+newnode.innerText.substr(0,6) + " (startet klokken " + newtime + ")")
     } else{
       $('#running').html("")
     }
@@ -47,7 +47,7 @@ for(let i = 1; i<12;i++){
     console.log(node.innerText) // .substr(7)
 
     if(node.title.includes("Forelesning")){
-      $('#rom').html(node.innerText.substr(17,6).replace('(', '').replace(',', ''))
+      $('#rom').html(node.innerText.substr(17,4).replace('(', '').replace(',', ''))
       $('#fag').html(node.innerText.substr(0,6))
       $('#type').html(node.innerText.substr(6,11))
     }else if(node.title.includes("Øving")){
