@@ -1,5 +1,5 @@
 let score1 = document.getElementById('scorep1')
-
+let gametype = "normal"
 setUpListener("p1")
 function setUpListener(id){
   const node = document.getElementById("input"+id)
@@ -20,10 +20,16 @@ function updatescore(id, extra){
   }
 let scoreToBeAdded = document.getElementById("input"+playerId).value - 0
 let currentScore = document.getElementById(playerId).innerText - 0
-let totalscore = scoreToBeAdded + currentScore
-
+let totalscore = 0
+if(gametype==="normal"){
+totalscore = scoreToBeAdded + currentScore
+}else{
+  totalscore = currentScore - scoreToBeAdded
+}
 if(totalscore !== null && !Number.isNaN(totalscore)&& totalscore !== undefined){
+
   document.getElementById(playerId).innerText = totalscore + ""
+
   appendScore(playerId, scoreToBeAdded)
 }else{
   alert("Du har tastet inn et ugyldig tall")
@@ -32,6 +38,7 @@ if(totalscore !== null && !Number.isNaN(totalscore)&& totalscore !== undefined){
 }
 let previousNodeMap = new Map()
 let currentRound = new Map()
+
 
 function appendScore(playerId, score){
 
@@ -90,19 +97,6 @@ function updatePreviousNode(playerId, node){
 previousNodeMap.set(playerId, node)
 }
 
-/* Not in use */
-function calculateTotal(playerId){
-
-  let totalNode = document.getElementById(playerId+"total")
-
-  let scoreTab = document.getElementsByClassName("score-element-" + playerId)
-  let total = 0;
-  for(let i = 0; i< scoreTab.length; i++){
-    total += scoreTab[i].innerText -0
-  }
-  totalNode.innerText = total
-
-}
 
 function changeName(id){
 let playerId = id.substr(4,5)
@@ -113,7 +107,22 @@ document.getElementById('header'+playerId).innerText = newName
 function howManyPlayers(){
   return document.getElementsByClassName('score-container').length
 }
-
+function changeScoring(){
+  let score = "0"
+  if(gametype==="normal"){
+  gametype = "maxSum"
+  score = prompt("Please type the sum you want to count down from")
+}else{
+  gametype = "normal"
+}
+for(let i = 1; i<document.getElementsByClassName('input-name').length;i++){
+  if(gametype === "normal"){
+  document.getElementById('p'+i).innerText = score
+}else{
+  document.getElementById('p'+i).innerText = score
+}
+}
+}
 
 function addNewPlayer(){
 
@@ -142,7 +151,7 @@ function updateIdOfChildElements(mainNode, number){
   list[5].id = "headerp"+number;
   list[5].innerText = "Spiller "+number;
   list[7].id = "p"+number;
-  list[7].innerText = 0 + ""
+  //list[7].innerText = 0 + ""
   list[9].id = "inputp"+number;
   list[9].value = ""
   list[11].id = "submitp"+number;

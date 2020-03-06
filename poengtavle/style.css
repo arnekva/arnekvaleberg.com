@@ -36,11 +36,20 @@ overflow: auto;
   padding:30px;
   text-align: center;
 }
+.lefty{
+float:right;
 
+}
+.menu{
+height:100px;
+width:700px;
+margin:auto;
+}
 .add-player {
+  float:left;
   margin-top:10px;
-  margin-right:auto;
-  margin-left:auto;
+  margin-right:50px;
+  width:300px;
 	box-shadow:inset 0px 1px 0px 0px #d9fbbe;
 	background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
 	background-color:#b8e356;
@@ -62,7 +71,7 @@ overflow: auto;
 }
 .add-player:active {
 	position:relative;
-	top:1px;
+	top:3px;
 }
 .footer{
   clear: both;

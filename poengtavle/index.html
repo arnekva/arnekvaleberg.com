@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Random Game</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="menu">
+  <input type="submit" id="addNewPlayer" class="add-player" value="Legg til ny spiller" onclick="addNewPlayer()"/>
+  <input type="submit" id="addNewPlayer" class="add-player lefty" value="Spille ned" onclick="changeScoring()"/>
+</div>
+  <div class="game-container">
+    <div class="p1 score-container" id="duplicate-container">
+
+      <input type="text" id="input-name-p1" class="input-name" placeholder="Sett navn for spiller" />
+      <input type="submit" id="namep1" value="Lagre" onclick="changeName(this.id)"/>
+
+      <h2 class="header" id="headerp1">Spiller 1</h2>
+
+      Poeng <p id="p1">0</p>
+
+      <input type="text" id="inputp1" placeholder="Verdi" class="input-name" name="player1" class="Kbutton player1">
+      <input type="submit" id="submitp1" value="Lagre" onclick="updatescore(this.id)"/>
+      <div class="score-list" id="score-listp1">
+        <div id="before-forp1"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<footer class="footer">
+<p>Poengtavle v0.2</p>
+</footer>
+
+
+  <script src="game.js"></script>
+</body>
+</html>
