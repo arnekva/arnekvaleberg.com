@@ -1,3 +1,3 @@
-# Scoreboard for Dart
+# Scoreboard
 
 Under development
