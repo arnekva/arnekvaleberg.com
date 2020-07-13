@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
 <meta charset="UTF-8">
+<title>Kanasta</title>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
@@ -83,27 +84,30 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </head>
 <body>
 
-<h2>Kanasta Scoreboard</h2>
+<h2 id="gameHeader">Kanasta Scoreboard</h2>
 
 <!-- Trigger/Open The Modal -->
 
     </div>
     <div class="intro-body" id="intro-body">
         <h2>Velkommen!</h2>
-      <p>Hvor mange spillere skal det være?</p>
+      <p id="task">Hvor mange spillere skal det være?</p>
       <input type="text" id="playerInputCount" class="roundScoreField" />
-      <input type="submit" value="Start" onclick="startGame()" class="startBtn"/>
+      <button id="startBtn" value="Start" onclick="startGame()" class="startBtn">Start</button>
       <div id="nameInputs"></div>
     </div>
     <div class="mainGame" id="gameContainer">
+
       <h2 id="roundHeader" class="roundHeader"></h2>
       <h4 id="roundRules" class="roundRules"></h2>
+        <h4 id="antallKort" class="cardCount"></h4>
         <div id="scoreInputContainer"></div>
     </div>
     <div class="currentScores" id="currentScoreContainer">
     <h3 id="currentLeader"></h3>
     <h4 id="runnerUp"></h4>
   </div>
+        <h4 id="roundCount" class="roundCount"></h4>
   <div class="scoreboard" id="scoreboard">
 
   </div>
@@ -111,7 +115,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 </div>
 
-
+<button class="resetBtn"onclick="nukeState()">Nullstill</button>
   <script src="game.js"></script>
 </body>
 </html>
