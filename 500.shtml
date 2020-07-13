@@ -26,16 +26,16 @@
 
     <h1 data-h1="500">500</h1>
     <p data-p="Internal Server Error">Internal Server Error</p>
-    <p style="color:#afafaf;"> Serveren har støtt på et internt problem under behandling av forespørselen din og den ble  </p>
-    <p style="color:#afafaf;">derfor ikke fullført. Vennligst prøv på nytt. Dersom problemet vedvarer, <a style="color:#aeccfc;text-decoration:none;" href="mailto:arnekva@gmail.com"> ta kontakt på mail</a>. </p>
+    <p style="color:#3b3b3b;"> Serveren har støtt på et internt problem under behandling av forespørselen din og den ble  </p>
+    <p style="color:#3b3b3b;">derfor ikke fullført. Vennligst prøv på nytt. Dersom problemet vedvarer, <a style="color:#aeccfc;text-decoration:none;" href="mailto:arnekva@gmail.com"> ta kontakt på mail</a>. </p>
     <p><a style="color:#aeccfc;text-decoration:none;font-size:25px;" href="/">Ta meg tilbake</a></p>
     <p>Ta gjerne kontakt på <a href="mailto:webmaster@arnekvaleberg.com">webmaster@arnekvaleberg.com</a>.</p>
     <br/><br/>
 
 </div>
 <div class="feilkoder">
-        <h3 style="color:#afafaf;">Feilkoder</h3>
-        <h4 style="color:#afafaf;">Vennligst ta vare på og oppgi følgende informasjon ved kontakt angående problem: </h4>
+        <h3 style="color:#3b3b3b;">Feilkoder</h3>
+        <h4 style="color:#3b3b3b;">Vennligst ta vare på og oppgi følgende informasjon ved kontakt angående problem: </h4>
         <p class="error-text">Error Code: <!--#echo var="REDIRECT_STATUS" --></p>
          <p class="error-text">Remote Address: <!--#echo var="REMOTE_ADDR" --></p>
          <p class="error-text">Requested URI: <!--#echo var="REQUEST_URI" --></p>

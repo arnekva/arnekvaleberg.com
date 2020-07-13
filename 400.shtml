@@ -26,8 +26,8 @@
 
     <h1 data-h1="400">400</h1>
     <p data-p="Bad Request">Bad Request</p>
-    <p style="color:#afafaf;">Nettleseren din har sendt en forespørselen serveren</p>
-    <p style="color:#afafaf;">ikke kan behandle. Prøv å last inn på ny, eller kontroller at linken er korrekt</p>
+    <p style="color:#3b3b3b;">Nettleseren din har sendt en forespørselen serveren</p>
+    <p style="color:#3b3b3b;">ikke kan behandle. Prøv å last inn på ny, eller kontroller at linken er korrekt</p>
     <p><a style="color:#aeccfc;text-decoration:none;font-size:25px;" href="/">Ta meg tilbake</a></p>
     <p>Ta gjerne kontakt på <a href="mailto:webmaster@arnekvaleberg.com">webmaster@arnekvaleberg.com</a>.</p>
 

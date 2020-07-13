@@ -15,7 +15,7 @@
 
     <h1 data-h1="403">403</h1>
     <p data-p="Forbidden">Forbidden</p>
-    <p style="color:#afafaf;">Tilgang nektet. Du har ikke tillatelse til å vise denne siden. <a style="color:#aeccfc;text-decoration:none;" href="/">Ta meg hjem</a></p>
+    <p style="color:#3b3b3b;">Tilgang nektet. Du har ikke tillatelse til å vise denne siden. <a style="color:#aeccfc;text-decoration:none;" href="/">Ta meg hjem</a></p>
     <p>Ta gjerne kontakt på <a href="mailto:webmaster@arnekvaleberg.com">webmaster@arnekvaleberg.com</a>.</p>
   </div>
 </div>
