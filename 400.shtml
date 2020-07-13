@@ -49,7 +49,7 @@
 
 
 
-<div id="particles-js" style="pointer-events:none;"><script src="/particles.js"></script></div>
+<div id="particles-js" style="pointer-events:none;"></div>
 
 <script src="../js/particles.js"></script>
 
