@@ -6,7 +6,7 @@
 
   </head>
   <link rel="icon" href="/images/favicon.png">
-  <link rel="stylesheet" type="text/css" href="css/404.css">
+    <link rel="stylesheet" type="text/css" href="../css/404.css">
 
 <body>
 
@@ -89,7 +89,7 @@
 });
 </script>
 
-<script src="js/particles.js"></script>
+<script src="../js/particles.js"></script>
 
 </body>
 </div>
