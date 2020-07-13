@@ -1,0 +1,81 @@
+.mainGame{
+
+}
+
+h2, h4{
+  margin-top:10px;
+  margin-bottom:5px;
+}
+.mainGame > h1 {
+  font-size: 35px;
+  text-align: center;
+}
+.roundHeader{
+  font-size: 250px;
+  text-align: center;
+  color: #F0813C;
+}
+.roundRules {
+  font-size:65px;
+  text-align: center;
+  color:#EEC77A;
+}
+.playerNameText{
+  display: inline-block;
+    clear: left;
+    width: 250px;
+    font-size: 40px;
+    color:#DB3937;
+}
+.roundScoreField{
+  display: inline-block;
+  font-size: 30px;
+    height:40px;
+}
+#currentLeader{
+  font-size:35px;
+  color: #10786D;
+}
+.scoreText{
+  font-size: 26px;
+  color: #1CAA8E;
+}
+#scoreInputContainer{
+  height: 100px;
+margin-top: 40px;
+}
+
+.playerContainer{
+  margin-top:10px;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+
+}
+.startBtn{
+  height:100px;
+  width:100px;
+}
+.submitScoresButton{
+  display: block;
+  margin : 0 auto;
+  margin-top:20px;
+  height:100px;
+  width:50%;
+  background-color: #1CAA8E;
+  font-size: 25px;
+  border-width:0px;
+border:none;
+}
+.nameInputField{
+  display: inline-block;
+  font-size: 30px;
+    height:40px;
+    margin-right:15px;
+    margin-top:20px;
+}
+.submitNamesButton{
+  height:90px;
+  width:90px;
+}
