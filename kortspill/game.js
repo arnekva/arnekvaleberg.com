@@ -135,18 +135,10 @@ function hideCreationPart(){
 
 function startNextRound(){
   saveState();
-
   let header = document.getElementById('roundHeader');
   let cardCount = document.getElementById('antallKort');
   let roundCountText = document.getElementById('roundCount');
   let ruleText = document.getElementById('roundRules')
-  if(roundCount == rounds.rounds.length){
-    header.innerText = "Spillet er ferdig"
-    ruleText.innerText = ""
-    cardCount.innerText = ""
-    let runde = roundCount - 0 +1
-    roundCountText.innerText = "Runde " + runde + " av " + rounds.rounds.length
-  }else{
   header.innerText = rounds.rounds[roundCount].name
   ruleText.innerText = rounds.rounds[roundCount].rules
   cardCount.innerText = "Det skal deles " + rounds.rounds[roundCount].antall + " kort"
@@ -155,7 +147,7 @@ function startNextRound(){
   if(roundCount === 0 && hasJustRestored){
     firstRoundSetup()
     }
-    }
+
 }
 function firstRoundSetup(){
   let node = document.getElementById("scoreInputContainer")
@@ -188,8 +180,6 @@ function firstRoundSetup(){
       }
       if(roundCount+1 === rounds.rounds.length){
         printWinnerAndScoreboard()
-        endGame()
-        printScores()
       }else{
       printCurrentLeader()
       printScores()
@@ -203,31 +193,6 @@ function firstRoundSetup(){
     submitScoresButton.className = "submitScoresButton"
     node.appendChild(submitScoresButton)
 
-}
-function endGame(){
-  let main = document.getElementById("gameContainer")
-  main.style.display = "none"
-  let winnerText = document.getElementById("currentLeader")
-  let winnerTab = checkForDuplicateWinners()
-  if(winnerTab.length > 1){
-    winnerText.innerText = "Vinnerene er " + winnerTab[0].name
-    for(let i = 1; i<winnerTab.length;i++){
-      winnerText.innerText += " og " + winnerTab[i].name
-    }
-    winnerText.innerText += "!"
-  }else{
-    winnerText.innerText = "Vinneren er " + winnerTab[0].name + "!"
-  }
-
-}
-function checkForDuplicateWinners(){
-  let x = []
-  for(let i = 0; i<players.length;i++){
-    if(players[0].score == players[i].score){
-      x.push(players[i])
-    }
-  }
-  return x;
 }
 function findPlayerName(id){
   for(let i = 0; i<playerCount;i++){
@@ -295,5 +260,7 @@ for(let i = 0;i<playerCount;i++){
     scoreboard.appendChild(node)
   }
   }
-
+  //Gjør i modale box slik at bruker kan se når som helst.
+  //Bruk roundcount for å sjekke hvor langt det skal genereres
+  //En kolonne for runde, en kolonne videre for hver spiller
 }
