@@ -11,21 +11,24 @@ h2, h4{
   text-align: center;
 }
 .roundHeader{
-  font-size: 250px;
+  font-size: 185px;
   text-align: center;
   color: #F0813C;
 }
+
 .roundRules {
-  font-size:65px;
+  font-size:50px;
   text-align: center;
   color:#EEC77A;
 }
 .playerNameText{
   display: inline-block;
     clear: left;
-    width: 250px;
+    width: 200px;
     font-size: 40px;
     color:#DB3937;
+     text-align: right;
+      margin-right:15px;
 }
 .roundScoreField{
   display: inline-block;
@@ -48,14 +51,23 @@ margin-top: 40px;
 .playerContainer{
   margin-top:10px;
   margin: 0 auto;
-  width: 50%;
-  text-align: center;
   justify-content: center;
+  text-align:center;
 
 }
 .startBtn{
   height:100px;
   width:100px;
+  font-size:34px;
+  background-color: #3dd162;
+  box-shadow: 0px 0px 0px transparent;
+ border: 0px solid transparent;
+ text-shadow: 0px 0px 0px transparent;
+}
+.startBtn:hover{
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
 }
 .submitScoresButton{
   display: block;
@@ -64,9 +76,12 @@ margin-top: 40px;
   height:100px;
   width:50%;
   background-color: #1CAA8E;
-  font-size: 25px;
+  font-size: 30px;
   border-width:0px;
 border:none;
+}
+.currentScores{
+  margin-top:270px;
 }
 .nameInputField{
   display: inline-block;
@@ -76,6 +91,26 @@ border:none;
     margin-top:20px;
 }
 .submitNamesButton{
-  height:90px;
+  height:70px;
+  width:70px;
+  font-size:34px;
+  background-color: #34aeeb;
+  box-shadow: 0px 0px 0px transparent;
+ border: 0px solid transparent;
+ text-shadow: 0px 0px 0px transparent;
+}
+.resetBtn{
+  height:40px;
   width:90px;
+  background-color:#f77373;
+  font-size:20px;
+}
+.cardCount{
+  font-size:30px;
+  text-align: center;
+  color:#48adf7;
+}
+.roundCount{
+  font-size:15px;
+  color:#48adf7;
 }
