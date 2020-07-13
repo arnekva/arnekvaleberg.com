@@ -1,5 +1,7 @@
 let score1 = document.getElementById('scorep1')
 let gametype = "normal"
+let kanastaRounds = ["3+3", "3+4", "3+3+3", "3+3+4"]
+
 setUpListener("p1")
 function setUpListener(id){
   const node = document.getElementById("input"+id)
@@ -11,6 +13,8 @@ function setUpListener(id){
     }
 });
 }
+
+
 function updatescore(id, extra){
   let playerId;
   if(extra !== undefined){
